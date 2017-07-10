@@ -1,6 +1,6 @@
 {
   "name": "generator-ignitionsc",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Creates a standard Ignition for Sitecore Visual Studio 2015 project.",
   "homepage": "https://github.com/SitecoreIgnition",
   "author": {
