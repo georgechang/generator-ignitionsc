@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using Ignition.Foundation.Core.Mvc;
 
 namespace <%= projectname %>.Controllers
 {
-	public class <%= componentname %>Controller
+	public class <%= componentname %>Controller : IgnitionController
 	{
 	}
 }

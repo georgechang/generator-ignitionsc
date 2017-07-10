@@ -9,7 +9,7 @@ module.exports = yeoman.Base.extend({
   prompting: function () {
     // Have Yeoman greet the user.
     this.log(yosay(
-      'Welcome to the wicked ' + chalk.red('Sitecore Ignition') + ' generator!'
+      'Welcome to the awesome ' + chalk.red('Sitecore Ignition') + ' generator!'
     ));
 
     var prompts = [
@@ -30,17 +30,12 @@ module.exports = yeoman.Base.extend({
         name:     'componentname',
         message:  'What is your component name?'
       },
-      // {
-      //   type:     'confirm',
-      //   name:     'git',
-      //   message:  'Would you like to create a Git repository?',
-      //   default:  true
-      // }
     ];
 
     return this.prompt(prompts).then(function (props) {
-      // To access props later use this.props.someAnswer;
       this.props = props;
+      console.log('Cool, I\'ll create a project called ' + this.props.projectname +'. Here we go!');
+      // To access props later use this.props.someAnswer;
     }.bind(this));
   },
 
@@ -52,7 +47,6 @@ module.exports = yeoman.Base.extend({
       path.dirname = path.dirname.replace("Include\\Template\\Template.Feature", "Include\\" + _this.props.appname + "\\" + fullname);
       path.basename = path.basename.replace("Template.Feature", fullname);
       path.basename = path.basename.replace("FeatureController", _this.props.componentname + "Controller");
-      path.basename = path.basename.replace("FeatureInstaller", _this.props.componentname + "Installer");
       return path;
     }));
     this.fs.copyTpl(
@@ -62,13 +56,13 @@ module.exports = yeoman.Base.extend({
         appname: this.props.appname,
         componentname: this.props.componentname,
         layername: this.props.layername,
-        projectname: this.props.appname + '.' + this.props.layername + '.' + this.props.componentname,
+        projectname: fullname,
         guid: uuidV4()
        }
     );
   },
 
   install: function () {
-    this.installDependencies();
+    //this.installDependencies();
   }
 });
