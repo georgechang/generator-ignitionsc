@@ -13,8 +13,8 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace><%= projectname %></RootNamespace>
-    <AssemblyName><%= projectname %></AssemblyName>
+    <RootNamespace><%= projectName %></RootNamespace>
+    <AssemblyName><%= projectName %></AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -62,7 +62,7 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Glass.Mapper.Sc.Core.4.4.0.199\lib\Mvc52\Glass.Mapper.Sc.Mvc.dll</HintPath>
     </Reference>
-    <Reference Include="Ignition.Foundation.Core, Version=1.0.6400.35105, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Ignition.Foundation.Core, Version=1.0.0.7593, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Ignition.Foundation.Core.1.0.0.7593\lib\net452\Ignition.Foundation.Core.dll</HintPath>
     </Reference>
     <Reference Include="Kamsar.WebConsole, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -157,7 +157,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\<%= appname %>\<%= projectname %>\<%= projectname %>.Unicorn.config" />
+    <Content Include="App_Config\Include\<%= appName %>\<%= projectName %>\<%= projectName %>.Unicorn.config" />
     <Content Include="Views\Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -167,7 +167,7 @@
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controllers\<%= componentname %>Controller.cs" />
+    <Compile Include="Controllers\<%= componentName %>Controller.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

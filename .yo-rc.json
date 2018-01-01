@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "George Chang",
+      "authorEmail": "changg@gmail.com",
+      "authorUrl": "https://github.com/georgechang"
+    }
+  }
+}
