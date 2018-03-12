@@ -30,10 +30,9 @@
   },
   "license": "ISC",
   "dependencies": {
-    "chalk": "^2.1.0",
+    "chalk": "^2.3.0",
     "generator-generator": "^4.0.0",
-    "yeoman-generator": "^2.0.1",
-    "yo": "^2.0.0",
+    "yeoman-generator": "^2.0.2",
     "yosay": "^2.0.1"
   },
   "jest": {
