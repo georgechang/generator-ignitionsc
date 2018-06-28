@@ -1,6 +1,6 @@
 ﻿using Ignition.Foundation.Core.Mvc;
 
-namespace <%= projectname %>.Controllers
+namespace <%= appname %>.Controllers
 {
 	public class <%= componentname %>Controller : IgnitionController
 	{
